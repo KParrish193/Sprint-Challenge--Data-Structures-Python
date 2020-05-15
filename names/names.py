@@ -40,9 +40,10 @@ print (f"runtime: {end_time - start_time} seconds")
 # Python has built-in tools that allow for a very efficient approach to this problem
 # What's the best time you can accomplish?  Thare are no restrictions on techniques or data
 # structures, but you may not import any additional libraries that you did not write yourself.
+start_time_stretch = time.time()
 
-# duplicatesStretch = [duplicate for duplicate in(set(names_1).intersection(names_2))]
-# end_time = time.time()
+duplicatesStretch = [duplicate for duplicate in(set(names_1).intersection(names_2))]
+end_time_stretch = time.time()
 
-# print (f"Stretch:  {len(duplicatesStretch)} duplicates:\n\n{', '.join(duplicatesStretch)}\n\n")
-# print (f"Stretch runtime: {end_time - start_time} seconds")
+print (f"Stretch:  {len(duplicatesStretch)} duplicates:\n\n{', '.join(duplicatesStretch)}\n\n")
+print (f"Stretch runtime: {end_time_stretch - start_time_stretch} seconds")

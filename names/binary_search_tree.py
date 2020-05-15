@@ -44,7 +44,7 @@ class BSTNode:
     # False if it does not
     def contains(self, target):
         # ? is current value = target?
-        if self.value is target:
+        if self.value == target:
             return True
         else:
             # * goes left
